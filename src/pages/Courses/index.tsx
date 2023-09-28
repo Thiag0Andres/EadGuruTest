@@ -31,10 +31,13 @@ const Courses = () => {
       borderColor={theme.colors.LIGHT_BASE_05}
       overflow="hidden"
     >
-      <TouchBox width="100%" onPress={() => navigation.navigate("Classes")}>
+      <TouchBox
+        width="100%"
+        onPress={() => navigation.navigate("CourseDetail", { data: item })}
+      >
         <S.Image source={item.src} resizeMode="cover" />
         <Box align="center" mt="xxxxs" mb="xxxxs">
-          <S.TitleText isBold>{item.title}</S.TitleText>
+          <S.TitleText>{item.title}</S.TitleText>
           <S.SubText>{item.instructor}</S.SubText>
         </Box>
       </TouchBox>
@@ -48,7 +51,7 @@ const Courses = () => {
       title="Cursos"
       hasScroll={false}
     >
-      <BoxContainer mt="xxs" pd="innerGreat" align="center" bg="#5050">
+      <BoxContainer mt="xxs" pd="innerGreat" align="center">
         <FlatList
           data={data}
           showsVerticalScrollIndicator={false}

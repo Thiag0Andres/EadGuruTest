@@ -1,13 +1,20 @@
 import React from "react";
-import { useNavigation } from "@react-navigation/native";
 import logo from "../../assets/images/eadguru-6.png";
+import { Box } from "../../components";
+import { Props } from "./Models";
+import theme from "../../theme/themes";
 import * as S from "./styles";
 
-const Home = () => {
-  const navigation = useNavigation();
-
+const Home: React.FC<Props> = ({ navigation }) => {
   return (
-    <S.Container>
+    <Box
+      width="100%"
+      height="100%"
+      pd="innerGreat"
+      justify="center"
+      align="center"
+      bgColor={theme.colors.LIGHT_BASE_01}
+    >
       <S.ImageLogo source={logo} resizeMode="contain" />
       <S.Button
         onPress={() => {
@@ -16,7 +23,7 @@ const Home = () => {
       >
         <S.ButtonText>Cursos</S.ButtonText>
       </S.Button>
-    </S.Container>
+    </Box>
   );
 };
 

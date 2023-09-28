@@ -1,14 +1,6 @@
 import styled from "styled-components/native";
 import theme from "../../theme/themes";
 
-export const Container = styled.View`
-  flex: 1;
-  background-color: ${theme.colors.LIGHT_BASE_01};
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-`;
-
 export const ImageLogo = styled.ImageBackground`
   width: 300px;
   height: 100px;
