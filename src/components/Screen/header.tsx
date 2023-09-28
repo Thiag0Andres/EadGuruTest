@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Box, Header as HeaderDS } from "../index";
 
 import {
@@ -43,8 +43,17 @@ const Header: React.FC<PropsView> = ({
           onClose={onClose}
           onPressTextRight={navigationFilter ? navigationFilter : () => {}}
           textRight={filterName ?? ""}
-          isOption={filter || navigationFilter}
-          onBack={navigation.canGoBack() && navigation.goBack()}
+          onBack={
+            backbutton
+              ? () => {
+                  if (!backPress) {
+                    navigation.canGoBack() && navigation.goBack();
+                  } else {
+                    backPress();
+                  }
+                }
+              : null
+          }
         />
       </Box>
     );

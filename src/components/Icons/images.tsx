@@ -1,12 +1,12 @@
-import iconArrowBack from "../../assets/svg/icon-arrow-back.svg";
-import iconClose from "../../assets/svg/icon-close.svg";
-import iconCloseCircle from "../../assets/svg/icon-close-circle.svg";
-import iconEyeHidden from "../../assets/svg/icon-eye-hidden.svg";
-import iconEye from "../../assets/svg/icon-eye.svg";
-import iconMenu from "../../assets/svg/icon-menu.svg";
-import iconNotification from "../../assets/svg/icon-notification.svg";
-import iconOptions from "../../assets/svg/icon-options.svg";
-import iconSearch from "../../assets/svg/icon-search.svg";
+import iconArrowBack from "../../assets/images/icon-arrow-back.png";
+import iconClose from "../../assets/images/icon-close.png";
+import iconCloseCircle from "../../assets/images/icon-close-circle.png";
+import iconEyeHidden from "../../assets/images/icon-eye-hidden.png";
+import iconEye from "../../assets/images/icon-eye.png";
+import iconMenu from "../../assets/images/icon-menu.png";
+import iconNotification from "../../assets/images/icon-notification.png";
+import iconOptions from "../../assets/images/icon-options.png";
+import iconSearch from "../../assets/images/icon-search.png";
 
 type MapOptions = {
   [key: string]: any;

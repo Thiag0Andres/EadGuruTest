@@ -12,7 +12,6 @@ export interface PropsThemeDefault {
   colors: PropsColorsCore;
   icons: PropsIconsNameCore;
   styleText?: PropsTextDefault;
-  font?: propsTypeFonts;
   fontSize?: FontSizeProps;
   fontWeight?: FontWeightsProps;
   borderWidth?: PropsBorderWidthCore;
@@ -337,14 +336,6 @@ export interface PopsTypeButton {
       textColorDisabled: string;
     };
   };
-}
-
-export interface propsTypeFonts {
-  principal: string;
-  light?: string;
-  regular?: string;
-  medium?: string;
-  bold?: string;
 }
 
 export type PropsBorderWidth =

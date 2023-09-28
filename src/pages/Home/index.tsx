@@ -1,26 +1,22 @@
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import {
-  FlatList,
-  Linking,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-} from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
-
-import mocks from "./mocked";
+import logo from "../../assets/images/eadguru-6.png";
 import * as S from "./styles";
-import Screen from "../../components/Screen";
 
 const Home = () => {
   const navigation = useNavigation();
 
   return (
-    <>
-      <StatusBar backgroundColor={"#ffffff"} />
-      <Screen></Screen>
-    </>
+    <S.Container>
+      <S.ImageLogo source={logo} resizeMode="contain" />
+      <S.Button
+        onPress={() => {
+          navigation.navigate("Courses");
+        }}
+      >
+        <S.ButtonText>Cursos</S.ButtonText>
+      </S.Button>
+    </S.Container>
   );
 };
 

@@ -2,17 +2,10 @@ import * as colors from "./colors";
 import * as theme from "../settings/environment";
 import { PropsColorsCore } from "./Models/type.colors";
 import { PropsTextCore } from "./Models/type.text";
+import FONT_WEIGHT from "./fonts";
 
 export const lightColors: PropsColorsCore = {
   ...colors,
-};
-
-const font = {
-  principal: "Ubuntu",
-  light: "Ubuntu-Light",
-  regular: "Ubuntu-Regular",
-  medium: "Ubuntu-Medium",
-  bold: "Ubuntu-Bold",
 };
 
 const fontSize = {
@@ -157,37 +150,37 @@ const spaces = {
 const styleText: PropsTextCore = {
   heading: {
     xxxlr: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.display2,
       fontWeight: fontWeight.regular,
       lineHeight: lineHeight.tight,
     },
     xxxlm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.display2,
       fontWeight: fontWeight.medium,
       lineHeight: lineHeight.tight,
     },
     xxxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.display2,
       fontWeight: fontWeight.bold,
       lineHeight: lineHeight.tight,
     },
     xxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.display1,
       fontWeight: fontWeight.bold,
       lineHeight: lineHeight.fair,
     },
     md: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.xl,
       fontWeight: fontWeight.medium,
       lineHeight: lineHeight.fair,
     },
     mdl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.xl,
       fontWeight: fontWeight.regular,
       lineHeight: lineHeight.fair,
@@ -195,63 +188,63 @@ const styleText: PropsTextCore = {
   },
   subtitle: {
     xxlb: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.big,
       fontWeight: fontWeight.bold,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     xxxxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.bigger,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     xxxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.bigger,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     xxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.big,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     xl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.big,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     x: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.big,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     lg: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.larger,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     mdm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.larger,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xs,
       lineHeight: lineHeight.tight,
     },
     md: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.larger,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xs,
@@ -260,112 +253,112 @@ const styleText: PropsTextCore = {
   },
   paragraph: {
     xxxxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.large,
       fontWeight: fontWeight.bold,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.tight,
     },
     xxxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.large,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.tight,
     },
     xxl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.large,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.tight,
     },
     xxll: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.large,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.tight,
     },
     xl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.standard,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     lg: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.standard,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     l: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.standard,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     mdm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.middle,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     md: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.middle,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     mdl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.middle,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.fair,
     },
     sml: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.small,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     sm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.small,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     xs: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.small,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     xxs: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.smaller,
       fontWeight: fontWeight.bold,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     xxxs: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.smaller,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     xxxxs: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.smaller,
       fontWeight: fontWeight.light,
       letterSpacing: letterSpacing.xxs,
@@ -374,21 +367,21 @@ const styleText: PropsTextCore = {
   },
   link: {
     xl: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.standard,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     lg: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.standard,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
       lineHeight: lineHeight.distant,
     },
     xs: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.small,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
@@ -396,7 +389,7 @@ const styleText: PropsTextCore = {
       textDecoration: "underline",
     },
     sm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.small,
       fontWeight: fontWeight.regular,
       letterSpacing: letterSpacing.xxs,
@@ -404,7 +397,7 @@ const styleText: PropsTextCore = {
       textDecoration: "underline",
     },
     mdm: {
-      font: font.principal,
+      font: FONT_WEIGHT.Barlow_400,
       fontSize: fontSize.middle,
       fontWeight: fontWeight.medium,
       letterSpacing: letterSpacing.xxs,
@@ -860,7 +853,6 @@ const styleIcon = {
 };
 
 export default {
-  font,
   fontSize,
   fontWeight,
   borderRadius,

@@ -25,18 +25,18 @@ const fontFamily = (
   bold?: boolean
 ) => {
   if (bold) {
-    return theme?.font.bold;
+    return theme?.FONT_WEIGHT.Barlow_700;
   }
   if (type.fontWeight === 300) {
-    return theme?.font.light;
+    return theme?.FONT_WEIGHT.Barlow_300;
   }
   if (type?.fontWeight === 500) {
-    return theme?.font.medium;
+    return theme?.FONT_WEIGHT.Barlow_500;
   }
   if (type?.fontWeight === 700) {
-    return theme?.font.bold;
+    return theme?.FONT_WEIGHT.Barlow_700;
   }
-  return theme?.font.regular;
+  return theme?.FONT_WEIGHT.Barlow_400;
 };
 
 export const TextRegular = styled.Text<TextProps>`

@@ -9,11 +9,6 @@ export const Container = styled.View`
   padding: 20px;
 `;
 
-export const ImageLogo = styled.ImageBackground`
-  width: 300px;
-  height: 100px;
-`;
-
 export const Button = styled.TouchableOpacity`
   width: 100%;
   height: 50px;

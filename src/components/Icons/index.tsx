@@ -6,6 +6,7 @@ import { iconSizeOptions } from "../../constants/Tokens/tokens";
 import { Box, TouchBox } from "../Box";
 import { iconSelected } from "./images";
 import { PropsIcon } from "./Models";
+import { Image } from "../../components";
 
 function Icon({
   size,
@@ -59,7 +60,19 @@ function Icon({
 
   return (
     <Box mb={mb} ml={ml} mr={mr} mt={mt}>
-      {iconExternal()}
+      {isImage ? (
+        <TouchBox testID={testID} onPress={onPress} disabled={disabled}>
+          <Image
+            width={iconSizeOptions(size)}
+            height={iconSizeOptions(size)}
+            style={style}
+            source={sourceImage()}
+            resizeMode="contain"
+          />
+        </TouchBox>
+      ) : (
+        iconExternal()
+      )}
     </Box>
   );
 }

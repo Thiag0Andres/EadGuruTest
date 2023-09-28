@@ -16,7 +16,6 @@ export interface PropsHeader {
   titleColor?: string;
   isHome?: boolean;
   isClose?: boolean;
-  isOption?: boolean;
   editable?: boolean;
   bgColor?: string;
   badge?: number;
@@ -30,7 +29,6 @@ export interface PropsHeader {
   onChangeText?: (value?: string) => void;
   onPressSearch?: (value?: string) => void;
   itemsSearch?: Array<PropsItem>;
-  onBack?: () => void;
   onDrawer?: () => void;
   onClose?: () => void;
   onOption?: () => void;

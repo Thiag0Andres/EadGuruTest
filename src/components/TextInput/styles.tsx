@@ -57,7 +57,7 @@ export const TextInput = styled.TextInput<propsTextInput>`
     input === "search" || input === "searchLigth" || error || secureTextEntry
       ? `86%`
       : "100%"};
-  font-family: ${({ theme }) => theme.font.principal};
+  font-family: ${({ theme }) => theme.FONT_WEIGHT.Barlow_400};
   font-size: ${({ theme }) => theme?.styleText?.paragraph?.lg?.fontSize}px;
   font-weight: ${({ theme }) => theme?.styleText?.paragraph?.lg?.fontWeight};
   padding: ${({ theme }) => theme.styleTextInput.default.shape.padding}px;
