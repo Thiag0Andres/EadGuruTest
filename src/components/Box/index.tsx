@@ -33,17 +33,11 @@ export const KeyBoard = styled.KeyboardAvoidingView`
 
 export const BoxContainer = styled.View<BoxContainerProps>`
   flex: 1;
-  width: 100%;
-  height: 100%;
-  padding-top: ${getStatusBarHeight(true)}px;
-  align-items: ${({ align }) => align ?? "flex-start"};
-  justify-content: ${({ justify }) => justify ?? "flex-start"};
-  background-color: ${({ type, theme }) =>
-    type
-      ? backgroundOptions(type).bgColor
-      : theme?.styleBackground?.default?.bgColor};
-  opacity: ${({ type }) =>
-    backgroundOptions(type).opacity ? backgroundOptions(type).opacity : 100};
+  margin-top: ${({ mt }) =>
+    mt ? normalize(transformHorizontalMargin(mt)) : 0}px;
+  padding: ${({ pd }) =>
+    pd ? transformValue(transformPaddingMargin(pd)) : `${0}px`};
+  background-color: ${({ bg }) => bg ?? "transparent"};
 `;
 
 export const BoxSafeArea = styled(SafeAreaView)`
@@ -81,6 +75,10 @@ export const Box = styled.View<BoxProps>`
   align-items: ${({ align }) => align ?? "flex-start"};
   justify-content: ${({ justify }) => justify ?? "flex-start"};
   background-color: ${({ bgColor }) => bgColor ?? "transparent"};
+  border-radius: ${({ borderRadius, width, theme, br }) =>
+    borderRadius === "circle" || br === "circle"
+      ? width ?? theme.borderRadius.circle
+      : transformBorderRadius(borderRadius || br)}px;
   border-top-left-radius: ${({ borderRadiusTopLeft, width, theme, br }) =>
     borderRadiusTopLeft === "circle" || br === "circle"
       ? width ?? theme.borderRadius.circle

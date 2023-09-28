@@ -1,9 +1,21 @@
 import styled from "styled-components/native";
 import theme from "../../theme/themes";
 
-export const Image = styled.ImageBackground`
+export const Line = styled.View`
   width: 100%;
-  height: 150px;
+  border-bottom-width: 1px;
+  border-bottom-color: ${theme.colors.LIGHT_BASE_04};
+`;
+
+export const Image = styled.ImageBackground`
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+`;
+
+export const InfoCourse = styled.View`
+  width: 70%;
+  margin-left: 20px;
 `;
 
 export const TitleText = styled.Text`
